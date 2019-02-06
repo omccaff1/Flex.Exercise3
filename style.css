@@ -23,20 +23,41 @@ html, body {
 
 .container {
     max-width: 1200px;
-    width: 100%;
     padding: 5px;
     /*
         Content of container will always 5 away from edge of container */
-    /* */
     margin: 0 auto;
-    /* */
-    Used to center text
-    /* */
+    /*
+    Used to center text*/
+}
+
+/* .photos {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+} */
+img {
+    width: 100%;
+    max-width: 1200px;
+}
+
+#top-img {
+    display: block;
+    margin: 0 auto;
 }
 
 /* Tablet/Desktop overrides */
 @media(min-width: 681px) {
+
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .photos {
+        display: flex;
+    }
+
+    .photos img {
+        flex: 1 1 auto;
+        /* max-width: 100%; */
+    }
 }
 
 @media(min-width: 729px) {
